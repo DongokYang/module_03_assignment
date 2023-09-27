@@ -1,11 +1,14 @@
-# Virtual ATM Project for Pixell River Financial customer
-The intention of this program is to make an virtual ATM which enables customers to track their bank transactions.  
+# assignment03
 
 ## Description
-[Provide a brief description of the project]
+The purpose of this assignment is to hone programming skills using loops and logics. 
+
+## Virtual ATM Project for Pixell River Financial customer
+The intention of this program is to make an virtual ATM which enables customers to track their bank transactions.  
+## Interest calculating Project for VP Client Services.
 
 ## Author
 Dongok Yang 
 
 ## Assignment
-[Indicate the name and description of the assignment the project is related to]
+assignment 3 for logic and loops 
