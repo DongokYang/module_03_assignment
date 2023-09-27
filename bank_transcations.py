@@ -4,14 +4,19 @@ Author: Dongok Yang
 Date: 2023.09.27
 Usage:
 """
+
 import random
 import os
 from time import sleep
+#import libraries to get random value and clear screen 
 
 
 current_balance = float(random.randint(-1000, 10000))
 current_balance_str = "${:,.2f}".format(current_balance)
+#declare initial balance with random number
+
 while True:
+    #make a infinite loop 
     atm_interface = [
         "***************************************",
         "PIXELL RIVER FINANCIAL".center(40),
