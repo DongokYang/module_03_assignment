@@ -17,7 +17,7 @@ with open("account_balances.txt","r") as file:
         account_number, account_balance = number_balance
         account_data[account_number] = float(account_balance)
 
-pp = pprint.PrettyPrinter(20)
+pp = pprint.PrettyPrinter()
 pp.pprint(account_data)
 
 for account_number,opening_balance in account_data.items():
@@ -45,8 +45,6 @@ with open(filename, mode = "w", newline="") as csv_file:
         writer.writerow([account_number,closing_balance])
 
 
-
-print(f"Data has been written to {filename}")
 with open(filename, mode="r") as verification_file:
     reader = csv.reader(verification_file)
     for row in reader:
@@ -55,3 +53,11 @@ with open(filename, mode="r") as verification_file:
             break
     else:
         print("The file does not have any blank row")
+
+with open(filename, mode="r") as csv_file:
+    # Create a DictReader
+    reader = csv.DictReader(csv_file)
+
+    # Iterate through the rows and print the contents
+    for row in reader:
+        print(row)

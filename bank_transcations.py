@@ -1,8 +1,8 @@
 """
-Description:
+Description: A practice program for simulating an ATM interface using loops and logic. 
 Author: Dongok Yang
 Date: 2023.09.27
-Usage:
+Usage: Run program and follow prompts.
 """
 
 import random
