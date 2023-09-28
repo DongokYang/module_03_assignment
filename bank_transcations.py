@@ -49,7 +49,7 @@ while True:
         print(line)
     # printing interface
 
-    selection = input("Enter your selection:").upper()
+    selection = input("Enter your selection: ").upper()
     #getting user's selection
 
     if selection not in ['D', 'W','Q']:
@@ -62,7 +62,7 @@ while True:
     #if user enter Q, exit this program
 
     else:
-        amount = float(input("Enter amount of transaction:"))
+        amount = float(input("Enter amount of transaction: "))
         if selection == 'D':
             current_balance += amount
             current_balance_str = "${:,.2f}".format(current_balance)
@@ -72,12 +72,12 @@ while True:
         # if user decides to deposit money, let them deposit money 
 
         elif selection =='W':
-            current_balance -= amount
             if amount > current_balance:
                 for line in error_message_fund:
                     print(line)
             # if user decides to withdraw money, let them withdraw money 
             else:
+                current_balance -= amount
                 current_balance_str = "${:,.2f}".format(current_balance)
                 updated_balance[1] = f"Your current balance is: {current_balance_str}".center(40)
                 for line in updated_balance:
