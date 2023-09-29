@@ -54,13 +54,11 @@ with open(filename, mode="r") as verification_file:
             print("The file has a blank row.")
             break
     else:
-        print("The file does not have any blank row")
+        print("The file does not have any blank row.")
 # make sure csv file has no blank row
 
 with open(filename, mode="r") as csv_file:
-
     reader = csv.DictReader(csv_file)
-
     for row in reader:
         print(row)
 # display upadted data 

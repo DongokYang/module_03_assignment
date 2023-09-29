@@ -11,6 +11,7 @@ from time import sleep
 #import libraries to get random value and clear screen 
 
 
+commands = ['D', 'W','Q']
 current_balance = float(random.randint(-1000, 10000))
 current_balance_str = "${:,.2f}".format(current_balance)
 #declare initial balance with random number
@@ -52,7 +53,7 @@ while True:
     selection = input("Enter your selection: ").upper()
     #getting user's selection
 
-    if selection not in ['D', 'W','Q']:
+    if selection not in commands:
         for line in error_message_selection:
             print(line)
     #If user inputs wrong commands, then print error message
